@@ -7,7 +7,13 @@ import profilepic from "../assets/profilepic.jpg";
 
 const Hero = () => {
   return (
-    <div className="py-24 relative overflow-clip" style={{ background: 'linear-gradient(to bottom, #000, #2B1942 35%, #8F5C55 60%, #DBAF6E 80%)' }}>
+    <div
+      className="py-24 relative overflow-clip"
+      style={{
+        background:
+          "linear-gradient(to bottom, #000, #2B1942 35%, #8F5C55 60%, #DBAF6E 80%)",
+      }}
+    >
       <div className="absolute rounded-[50%] w-[3000px] h-[1300px] bg-black top-[550px] left-[50%] -translate-x-1/2 bg-[radial-gradient(closest-side,#000_70%,#2B1942)]"></div>
 
       <div className="relative">
@@ -38,25 +44,23 @@ const Hero = () => {
           />
         </motion.div>
 
+        <p className="text-center text-xl max-w-[800px] p-4 mx-auto mt-8 text-white/80">
+          I am a web developer with expertise in Next.js and React.js, focused
+          on creating dynamic and responsive applications. I also have
+          experience in app development with Flutter, broadening my skill set
+          for cross-platform solutions. Passionate about collaboration and
+          staying current with industry trends, I aim to build efficient,
+          user-friendly applications that make a meaningful impact.
+        </p>
 
-      <p className="text-center text-xl max-w-[800px] p-4 mx-auto mt-8 text-white/80">
-        I am a web developer with expertise in Next.js and React.js, focused on
-        creating dynamic and responsive applications. I also have experience in
-        app development with Flutter, broadening my skill set for cross-platform
-        solutions. Passionate about collaboration and staying current with
-        industry trends, I aim to build efficient, user-friendly applications
-        that make a meaningful impact.
-      </p>
-
-      <Image
-        src={profilepic}
-        className="h-auto w-auto my-8 mx-auto rounded-full border-4 border-orange-400 outline outline-2 outline-orange-600"
-        alt="profile pic"
-        height={180}
-        width={180}
-      />
-
-    </div>
+        <Image
+          src={profilepic}
+          className="h-auto w-auto my-8 mx-auto rounded-full border-4 border-orange-400 outline outline-2 outline-orange-600"
+          alt="profile pic"
+          height={180}
+          width={180}
+        />
+      </div>
     </div>
   );
 };
