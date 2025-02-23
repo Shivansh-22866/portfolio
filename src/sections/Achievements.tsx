@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useRef, useState } from "react";
 import image1 from "@/assets/images/hackverse.png";
 import image2 from "@/assets/images/hack2future.png";
 import image3 from "@/assets/images/isolve.png";

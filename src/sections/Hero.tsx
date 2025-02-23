@@ -6,7 +6,6 @@ import Image from "next/image";
 import Button from "@/components/ButtonComponent";
 import { motion, useScroll, useTransform } from "motion/react";
 import useTextReveal from "@/hooks/useTextReveal";
-import Link from "next/link";
 
 const Hero: FC = () => {
   const scrollingDiv = useRef<HTMLDivElement>(null);
@@ -19,6 +18,7 @@ const Hero: FC = () => {
 
   const { scope, entrance } = useTextReveal();
   const [isOpen, setIsOpen] = useState(false);
+  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   const [dragPosition, setDragPosition] = useState({ x: 0, y: 0 });
 
   const handleClickNavItem = (e: MouseEvent<HTMLAnchorElement>) => {

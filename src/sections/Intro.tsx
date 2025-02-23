@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, stagger, useAnimate, useInView } from "motion/react";
+import { useInView } from "motion/react";
 import { FC, Fragment, useEffect, useRef } from "react";
 import useTextReveal from "@/hooks/useTextReveal";
 import { SparkleIcon } from "lucide-react";
@@ -53,7 +53,7 @@ const Intro: FC = () => {
             <div className="flex gap-4 py-3 -translate-x-0">
               <div className="flex flex-none gap-4 py-3 pr-4 animate-move-left [animation-duration:15s]">
                 {[...new Array(2)].fill(0).map((_, idx) => (
-                  <Fragment>
+                  <Fragment key={idx}>
                     {words.map((word) => (
                       <div
                         key={word}

@@ -1,5 +1,5 @@
 import Button from '@/components/ButtonComponent';
-import { Github, Linkedin, Mail, Instagram, Code } from 'lucide-react';
+import { Github, Linkedin, Mail, Instagram } from 'lucide-react';
 import Image from 'next/image';
 import HTMLIcon from "@/assets/images/html.png";
 import CSSIcon from "@/assets/images/css.png"

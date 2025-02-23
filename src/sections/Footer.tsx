@@ -36,7 +36,6 @@ const navItems = [
 
 
 const Footer: FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const { scope, entrance } = useTextReveal();
   const inView = useInView(scope);
 
@@ -48,7 +47,6 @@ const Footer: FC = () => {
 
   const handleClickNavItem = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    setIsOpen(false);
 
     const url = new URL(e.currentTarget.href);
     const hash = url.hash;
