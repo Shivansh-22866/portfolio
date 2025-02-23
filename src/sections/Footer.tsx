@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useEffect, useState, MouseEvent } from "react";
+import { FC, useEffect, MouseEvent } from "react";
 import Button from "@/components/ButtonComponent";
 import useTextReveal from "@/hooks/useTextReveal";
 import { useInView } from "motion/react";

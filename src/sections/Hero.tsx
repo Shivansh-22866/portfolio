@@ -17,6 +17,7 @@ const Hero: FC = () => {
   const portraitWidth = useTransform(scrollYProgress, [0, 1], ["100%", "240%"]);
 
   const { scope, entrance } = useTextReveal();
+  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   const [isOpen, setIsOpen] = useState(false);
   /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   const [dragPosition, setDragPosition] = useState({ x: 0, y: 0 });
